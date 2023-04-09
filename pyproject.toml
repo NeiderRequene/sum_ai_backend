@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "sum-ia"
+version = "0.1.0"
+description = "Archivo de dependicias"
+authors = ["NeiderRequene <requeneneider@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "sum_ia"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+djangorestframework = "^3.14.0"
+python-dotenv = "^1.0.0"
+django-cors-headers = "^3.14.0"
+djangorestframework-simplejwt = "^5.2.2"
+django-storages = "^1.13.2"
+django-filter = "^23.1"
+django-rest-passwordreset = "^1.3.0"
+boto3 = "^1.26.109"
+
+
+[tool.poetry.group.dev.dependencies]
+autopep8 = "^2.0.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
